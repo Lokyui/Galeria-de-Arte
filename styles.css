@@ -1,59 +1,58 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url("fondo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 header {
     background-color: #8B4513;
     color: white;
     text-align: center;
-    padding: 10px;
-}
-
-nav {
-    background-color: #D2B48C;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
+    padding: 0.5em; 
 }
 
 section {
-    padding: 20px;
+    padding: 0.5em; 
 }
 
-footer {
-    background-color: #D2B48C;
-    color: white;
-    text-align: center;
-    padding: 10px;
+nav {
+    font-size: 1rem;
+    font-weight: bold; 
+    font-family: 'Arial', sans-serif; 
+    text-transform: uppercase; 
+}
+
+form{
+    background-color: #f9f9f9; 
+    padding: 1rem; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); 
+}
+
+h2{
+    font: size 2rem;;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
+    max-width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
 .centered-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 760vh;
+    height: auto;
     flex-direction: column;
 }
 .introduccion {
@@ -62,18 +61,61 @@ footer {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
-    height: 120vh;
+    height: auto;
     color: #333333;
 }
 .datoscontacto {
-    margin-top: -300px;
+    margin-top: 200px;
     text-align: right;
     width: 80%;
 }
-ul {
-    list-style-type: none;
-}
-.imageninicio {
-    width: 600px;
+
+.img-fluid{
+    width: 80%;
     height: auto;
+
+}
+
+.img-fluid:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.museo
+{
+    width: 45%;
+    height: auto;  
+}
+
+@media (max-width: 768px) {
+    .introduccion {
+      float: none;
+      width: 100%;
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: auto;}
+}
+
+@media (max-width: 768px) {
+    .datoscontacto {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .col-md-6 {
+        text-align: center;
+    }
+
+    .col-md-6:first-child {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .museo {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
